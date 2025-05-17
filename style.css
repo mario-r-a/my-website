@@ -1,0 +1,75 @@
+/* MARIO RUBY ARIESUSANDI / NIM 0706012410028 / CLASS WEB PROGRAMMING B */
+
+/* Jost font override */
+.font-jost {
+    font-family: 'Jost', sans-serif;
+}
+
+/* Custom font family */
+body {
+    font-family: 'Jost', sans-serif;
+}
+
+/* Right-side nav default styling */
+#sideNav a {
+    background-color: #1f2937;
+    color: #d1d5db;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.375rem;
+    display: block;
+}
+
+#sideNav a:hover {
+    color: white;
+    background-color: #27272a;
+}
+
+/* Active section styling */
+#sideNav a.active {
+    background-color: #f97316;
+    color: black;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Scrollspy active style */
+.fixed a.active {
+    background-color: #f97316;
+    color: black;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.fixed a {
+    cursor: pointer;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* For webkit browsers */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* For Firefox */
+  .scrollbar-hide {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  

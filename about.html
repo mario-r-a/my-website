@@ -1,0 +1,249 @@
+<!-- MARIO RUBY ARIESUSANDI / NIM 0706012410028 / CLASS WEB PROGRAMMING B-->
+
+<!DOCTYPE html>
+<html class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mario Ariesusandi 👋</title>
+
+    <!-- Preconnect to Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Link to Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-neutral-900 text-white font-jost">
+    <!-- Top Navbar -->
+    <header>
+        <nav
+            class="w-full flex items-center justify-between px-6 py-4 bg-neutral-800 text-white fixed top-0 left-0 z-50 border-b border-neutral-700">
+            <!-- Logo -->
+            <div class="flex items-center ml-4 text-xl font-bold">
+                <a href="#" class="inline-block align-middle">
+                    <img src="img/marWh.png" class="h-[1.2em] w-auto inline-block align-middle" alt="Logo" />
+                </a>
+            </div>
+
+            <!-- Hamburger Menu -->
+            <div class="md:hidden mr-4">
+                <button id="menu-toggle" class="focus:outline-none">
+                    <!-- Hamburger Icon -->
+                    <img id="menu-toggle-icon" src="./img/hamburgerMenu.svg" class="w-6 h-6" />
+
+                    <!-- Close Icon -->
+                    <img id="menu-close-icon" src="./img/close.svg" class="w-6 h-6 hidden" />
+                </button>
+            </div>
+
+
+            <!-- Page Link (Desktop view) -->
+            <div class="hidden md:flex space-x-10 mr-20 text-lg font-extralight tracking-wide">
+                <a href="index.html" class="hover:text-orange-500 transition">HOME</a>
+                <a href="project.html" class="hover:text-orange-500 transition">PROJECT</a>
+                <a href="" class="font-normal text-orange-500">ABOUT</a>
+                <a href="contact.html" class="hover:text-orange-500 transition">CONTACT</a>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="md:hidden fixed top-16 right-0 w-full bg-neutral-800 text-white py-4 px-6 z-40 transform translate-x-full transition-transform duration-300">
+            <div class="flex justify-center space-x-6 text-lg font-light">
+                <a href="index.html" class="hover:text-orange-500 transition">HOME</a>
+                <a href="project.html" class="hover:text-orange-500 transition">PROJECT</a>
+                <a href="" class="font-normal text-orange-500">ABOUT</a>
+                <a href="contact.html" class="hover:text-orange-500 transition">CONTACT</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main content wrapper to add top padding for fixed navbar -->
+    <main class="pt-24 max-w-4xl mx-auto px-6">
+
+        <!-- About section with picture + brief description -->
+        <section id="about-me" class="mb-16 flex flex-col md:flex-row items-center gap-8">
+            <img src="img/aboutMe.jpeg" alt="Mario Ariesusandi" class="rounded-full w-40 h-40 object-cover shadow-lg" />
+
+            <div class="text-lg leading-relaxed max-w-xl">
+                <h1 class="text-3xl font-semibold mb-4">Hello, I'm Mario Ruby Ariesusandi 👋</h1>
+                <p>
+                    Currently, I'm diving deep into web programming and improving my skills every day. I love
+                    creating websites and exploring new technologies. When I'm not coding, I enjoy staying active
+                    and learning new things.
+                </p>
+            </div>
+        </section>
+
+        <!-- Hobbies section -->
+        <section id="hobbies" class="mb-16">
+            <h2 class="text-2xl font-semibold mb-6 border-b border-orange-500 pb-2">My Hobbies</h2>
+
+            <div class="space-y-8">
+
+                <!-- Badminton -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">🏸 Badminton</h3>
+                    <p>
+                        Badminton is one of my favorite sports. I started to play since I was 7. I enjoy playing both
+                        casually with friends and in competitive matches.
+                    </p>
+                    <!-- Photo Carousel -->
+                    <div class="w-full overflow-x-hidden py-4">
+                        <div class="flex w-max gap-4" style="animation: scroll 15s linear infinite;"
+                            onmouseover="this.style.animationPlayState='paused';"
+                            onmouseout="this.style.animationPlayState='running';">
+
+                            <!-- Photo 1 -->
+                            <img src="img/badm1.jpeg" alt="Badminton 1"
+                                class="w-48 h-32 object-cover rounded-lg border-2 border-orange-500 shadow-md" />
+
+                            <!-- Photo 2 -->
+                            <img src="img/badm2.jpeg" alt="Badminton 2"
+                                class="w-48 h-32 object-cover rounded-lg border-2 border-orange-500 shadow-md" />
+
+                            <!-- Photo 3 -->
+                            <img src="img/badm3.jpeg" alt="Badminton 3"
+                                class="w-48 h-32 object-cover rounded-lg border-2 border-orange-500 shadow-md" />
+
+                            <!-- Photo 4 -->
+                            <img src="img/badm4.jpeg" alt="Badminton 4"
+                                class="w-48 h-32 object-cover rounded-lg border-2 border-orange-500 shadow-md" />
+
+                            <!-- Photo 5 -->
+                            <img src="img/badm5.jpeg" alt="Badminton 5"
+                                class="w-48 h-32 object-cover rounded-lg border-2 border-orange-500 shadow-md" />
+
+                            <!-- Photo 1 -->
+                            <img src="img/badm1.jpeg" alt="Badminton 1"
+                                class="w-48 h-32 object-cover rounded-lg border-2 border-orange-500 shadow-md" />
+
+                            <!-- Photo 2 -->
+                            <img src="img/badm2.jpeg" alt="Badminton 2"
+                                class="w-48 h-32 object-cover rounded-lg border-2 border-orange-500 shadow-md" />
+
+                            <!-- Photo 3 -->
+                            <img src="img/badm3.jpeg" alt="Badminton 3"
+                                class="w-48 h-32 object-cover rounded-lg border-2 border-orange-500 shadow-md" />
+
+                            <!-- Photo 4 -->
+                            <img src="img/badm4.jpeg" alt="Badminton 4"
+                                class="w-48 h-32 object-cover rounded-lg border-2 border-orange-500 shadow-md" />
+
+                            <!-- Photo 5 -->
+                            <img src="img/badm5.jpeg" alt="Badminton 5"
+                                class="w-48 h-32 object-cover rounded-lg border-2 border-orange-500 shadow-md" />
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Cycling -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">🚴 Cycling</h3>
+                    <p>
+                        Cycling is my way to explore the outdoors and clear my mind. The longest trip I've ever made was
+                        around 101km. I find peace and freedom on two wheels.
+                    </p>
+                    <!-- Photo Carousel -->
+                    <div class="w-full overflow-x-hidden py-4">
+                        <div class="flex w-max gap-4" style="animation: scroll 15s linear infinite;"
+                            onmouseover="this.style.animationPlayState='paused';"
+                            onmouseout="this.style.animationPlayState='running';">
+
+                            <!-- Photo 1 -->
+                            <img src="img/cycle1.jpeg" alt="Cycling 1"
+                                class="w-48 h-32 object-cover rounded-lg border-2 border-orange-500 shadow-md" />
+
+                            <!-- Photo 2 -->
+                            <img src="img/cycle2.jpeg" alt="Cycling 2"
+                                class="w-48 h-32 object-cover rounded-lg border-2 border-orange-500 shadow-md" />
+
+                            <!-- Photo 3 -->
+                            <img src="img/cycle3.jpeg" alt="Cycling 3"
+                                class="w-48 h-32 object-cover rounded-lg border-2 border-orange-500 shadow-md" />
+
+                            <!-- Photo 4 -->
+                            <img src="img/cycle4.jpeg" alt="Cycling 4"
+                                class="w-48 h-32 object-cover rounded-lg border-2 border-orange-500 shadow-md" />
+
+                            <!-- Photo 5 -->
+                            <img src="img/cycle5.jpeg" alt="Cycling 5"
+                                class="w-48 h-32 object-cover rounded-lg border-2 border-orange-500 shadow-md" />
+
+                            <!-- Photo 1 -->
+                            <img src="img/cycle1.jpeg" alt="Cycling 1"
+                                class="w-48 h-32 object-cover rounded-lg border-2 border-orange-500 shadow-md" />
+
+                            <!-- Photo 2 -->
+                            <img src="img/cycle2.jpeg" alt="Cycling 2"
+                                class="w-48 h-32 object-cover rounded-lg border-2 border-orange-500 shadow-md" />
+
+                            <!-- Photo 3 -->
+                            <img src="img/cycle3.jpeg" alt="Cycling 3"
+                                class="w-48 h-32 object-cover rounded-lg border-2 border-orange-500 shadow-md" />
+
+                            <!-- Photo 4 -->
+                            <img src="img/cycle4.jpeg" alt="Cycling 4"
+                                class="w-48 h-32 object-cover rounded-lg border-2 border-orange-500 shadow-md" />
+
+                            <!-- Photo 5 -->
+                            <img src="img/cycle5.jpeg" alt="Cycling 5"
+                                class="w-48 h-32 object-cover rounded-lg border-2 border-orange-500 shadow-md" />
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-neutral-950 mt-16 px-8 py-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="img/marWh.png" alt="Logo" class="h-6" />
+            </div>
+
+            <!-- Copyright -->
+            <div class="flex items-center gap-2 text-sm font-medium">
+                <img src="img/copyright.png" alt="Copyright" class="w-4 h-4" />
+                <span>2025 Mario Personal Website</span>
+            </div>
+
+            <!-- Links -->
+            <div class="flex items-center gap-4">
+                <a href="mailto:mariesusandi@student.ciputra.ac.id" target="_blank">
+                    <img src="img/gmail.png" alt="Gmail" class="h-6" />
+                </a>
+                <a href="https://instagram.com/mario_ruby" target="_blank">
+                    <img src="img/instagram.png" alt="Instagram" class="h-6" />
+                </a>
+                <a href="https://www.linkedin.com/in/mario-ruby-ariesusandi-673379231/" target="_blank">
+                    <img src="img/linkedin2.png" alt="LinkedIn" class="h-6" />
+                </a>
+                <a href="contact.html" class="ml-4 text-orange-500 font-semibold hover:underline">
+                    Contact Me
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!-- MARIO RUBY ARIESUSANDI / NIM 0706012410028 / CLASS WEB PROGRAMMING B-->
+
+<!DOCTYPE html>
+<html class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mario Ariesusandi 👋</title>
+
+    <!-- Preconnect to Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Link to Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-neutral-900 text-white font-jost">
+    <!-- Top Navbar -->
+    <header>
+        <nav
+            class="w-full flex items-center justify-between px-6 py-4 bg-neutral-800 text-white fixed top-0 left-0 z-50 border-b border-neutral-700">
+            <!-- Logo -->
+            <div class="flex items-center ml-4 text-xl font-bold">
+                <a href="#" class="inline-block align-middle">
+                    <img src="img/marWh.png" class="h-[1.2em] w-auto inline-block align-middle" alt="Logo" />
+                </a>
+            </div>
+
+            <!-- Hamburger Menu -->
+            <div class="md:hidden mr-4">
+                <button id="menu-toggle" class="focus:outline-none">
+                    <!-- Hamburger Icon -->
+                    <img id="menu-toggle-icon" src="./img/hamburgerMenu.svg" class="w-6 h-6" />
+
+                    <!-- Close Icon -->
+                    <img id="menu-close-icon" src="./img/close.svg" class="w-6 h-6 hidden" />
+                </button>
+            </div>
+
+
+            <!-- Page Link (Desktop view) -->
+            <div class="hidden md:flex space-x-10 mr-20 text-lg font-extralight tracking-wide">
+                <a href="index.html" class="hover:text-orange-500 transition">HOME</a>
+                <a href="" class="font-normal text-orange-500">PROJECT</a>
+                <a href="about.html" class="hover:text-orange-500 transition">ABOUT</a>
+                <a href="contact.html" class="hover:text-orange-500 transition">CONTACT</a>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="md:hidden fixed top-16 right-0 w-full bg-neutral-800 text-white py-4 px-6 z-40 transform translate-x-full transition-transform duration-300">
+            <div class="flex justify-center space-x-6 text-lg font-light">
+                <a href="index.html" class="hover:text-orange-500 transition">HOME</a>
+                <a href="" class="font-normal text-orange-500">PROJECT</a>
+                <a href="about.html" class="hover:text-orange-500 transition">ABOUT</a>
+                <a href="contact.html" class="hover:text-orange-500 transition">CONTACT</a>
+            </div>
+        </div>
+    </header>
+
+    
+
+    <footer class="bg-neutral-950 mt-16 px-8 py-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="img/marWh.png" alt="Logo" class="h-6" />
+            </div>
+
+            <!-- Copyright -->
+            <div class="flex items-center gap-2 text-sm font-medium">
+                <img src="img/copyright.png" alt="Copyright" class="w-4 h-4" />
+                <span>2025 Mario Personal Website</span>
+            </div>
+
+            <!-- Links -->
+            <div class="flex items-center gap-4">
+                <a href="mailto:mariesusandi@student.ciputra.ac.id" target="_blank">
+                    <img src="img/gmail.png" alt="Gmail" class="h-6" />
+                </a>
+                <a href="https://instagram.com/mario_ruby" target="_blank">
+                    <img src="img/instagram.png" alt="Instagram" class="h-6" />
+                </a>
+                <a href="https://www.linkedin.com/in/mario-ruby-ariesusandi-673379231/" target="_blank">
+                    <img src="img/linkedin2.png" alt="LinkedIn" class="h-6" />
+                </a>
+                <a href="contact.html" class="ml-4 text-orange-500 font-semibold hover:underline">
+                    Contact Me
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
