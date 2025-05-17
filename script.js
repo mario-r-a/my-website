@@ -45,6 +45,10 @@ $(document).ready(function () {
         });
     }
 
+    $('.project-card').on('click', function () {
+        $(this).find('.project-detail').slideToggle(300);
+    });
+
     activateNav();
     $(document).on('scroll', activateNav);
 });
